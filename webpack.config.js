@@ -8,13 +8,14 @@ let plugins = [];
 
 plugins.push(
   new ExtractTextPlugin('style.css'),
-  new UglifyJsPlugin()
+  //new UglifyJsPlugin()
 );
 
   module.exports = {
+    mode: "development",
     entry: './dev/js/main.js',
     output: {
-      filename: 'resume.js',
+      filename: 'main.js',
       path: path.resolve(__dirname, 'dist')
     },
     module: {
@@ -41,11 +42,14 @@ plugins.push(
                 }
               },
               {
-                loader: 'postcss-loader'
+                loader: 'postcss-loader',
+                options: {
+                  sourceMap: true
+                }
               },
-              {
-                loader: 'resolve-url-loader'
-              },
+              // {
+              //   loader: 'resolve-url-loader'
+              // },
               {
                 loader: 'sass-loader',
                 options: {
@@ -59,7 +63,7 @@ plugins.push(
           test: /\.css$/,
           use: ExtractTextPlugin.extract({
             fallback: "style-loader",
-            use: ["css-loader", 'resolve-url-loader', 'postcss-loader']
+            use: ["css-loader", 'postcss-loader']
           })
         },
         {
