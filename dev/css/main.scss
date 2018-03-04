@@ -35,3 +35,33 @@
 @import "node_modules/bootstrap/scss/carousel";
 @import "node_modules/bootstrap/scss/utilities";
 @import "node_modules/bootstrap/scss/print";
+
+
+#hero{
+  position: relative;
+  height: 100vh;
+  background-color: theme-color("primary");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(img/mike-dorner-173502_500.jpg);
+  background-image: image-set(url(img/mike-dorner-173502_500.jpg) 1x, url(img/mike-dorner-173502_1000.jpg) 2x, url(img/mike-dorner-173502_1500.jpg) 3x);
+
+  @include media-breakpoint-up(sm) {
+    background-image: url(img/mike-dorner-173502_800.jpg);
+    background-image: image-set(url(img/mike-dorner-173502_800.jpg) 1x, url(img/mike-dorner-173502_1500.jpg) 2x);
+  }
+  @include media-breakpoint-up(md) {
+    background-image: url(img/mike-dorner-173502_1000.jpg);
+    background-image: image-set(url(img/mike-dorner-173502_1000.jpg) 1x, url(img/mike-dorner-173502_1500.jpg) 1.5x, url(img/mike-dorner-173502_3000.jpg) 3x);
+  }
+  @include media-breakpoint-up(lg) {
+    background-image: url(img/mike-dorner-173502_1200.jpg);
+    background-image: image-set(url(img/mike-dorner-173502_1200.jpg) 1x, url(img/mike-dorner-173502_3000.jpg) 2x);
+  }
+
+    @include media-breakpoint-up(xl) {
+    background-image: url(img/mike-dorner-173502_1500.jpg);
+    background-image: image-set(url(img/mike-dorner-173502_1500.jpg) 1x, url(img/mike-dorner-173502_3000.jpg) 2x);
+  }
+}
