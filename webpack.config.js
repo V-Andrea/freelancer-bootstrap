@@ -47,9 +47,9 @@ plugins.push(
                   sourceMap: true
                 }
               },
-              // {
-              //   loader: 'resolve-url-loader'
-              // },
+              {
+                loader: 'resolve-url-loader'
+              },
               {
                 loader: 'sass-loader',
                 options: {
@@ -63,7 +63,7 @@ plugins.push(
           test: /\.css$/,
           use: ExtractTextPlugin.extract({
             fallback: "style-loader",
-            use: ["css-loader", 'postcss-loader']
+            use: ["css-loader", 'postcss-loader', 'resolve-url-loader']
           })
         },
         {
