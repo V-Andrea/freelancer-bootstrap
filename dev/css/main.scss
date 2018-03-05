@@ -47,6 +47,28 @@ h3, h4, .h3, .h4 {
   letter-spacing: 1px;
 }
 
+.padding-block {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  @include media-breakpoint-up(md) {
+    padding-top: 75px;
+    padding-bottom: 75px;
+  }
+  @include media-breakpoint-up(lg) {
+    padding-top: 100px;
+    padding-bottom: 100px;
+  }
+}
+
+#page-footer {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  @include media-breakpoint-up(md) {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+}
+
 #hero{
   position: relative;
   height: 100vh;
