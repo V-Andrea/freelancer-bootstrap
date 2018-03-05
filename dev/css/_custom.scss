@@ -1,8 +1,12 @@
 $theme-colors: (
   "primary": #955cbc,
+  "secondary": #e8afcd,
   "success": #20e919,
-  "danger": #ff4203
+  "danger": #ff4203,
+  "light": #727172,
+  "dark" : #272432
 );
+
 
 $enable-rounded: false;
 
@@ -15,3 +19,5 @@ $font-family-base: 'Archivo Narrow', $font-family-sans-serif;
 $font-size-base:              1rem !default;
 $h1-font-size:                $font-size-base * 4;
 $h2-font-size:                $font-size-base * 3;
+
+$headings-line-height: 1.5;
