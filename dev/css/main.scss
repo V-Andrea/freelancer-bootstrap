@@ -65,3 +65,59 @@
     background-image: image-set(url(img/mike-dorner-173502_1500.jpg) 1x, url(img/mike-dorner-173502_3000.jpg) 2x);
   }
 }
+
+#jumbo1 {
+  position: relative;
+  background-color: theme-color("primary");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(img/nicole-honeywill-546848_500.jpg);
+  background-image: image-set(url(img/nicole-honeywill-546848_500.jpg) 1x, url(img/nicole-honeywill-546848_1000.jpg) 2x, url(img/nicole-honeywill-546848_1500.jpg) 3x);
+
+  @include media-breakpoint-up(sm) {
+    background-image: url(img/nicole-honeywill-546848_800.jpg);
+    background-image: image-set(url(img/nicole-honeywill-546848_800.jpg) 1x, url(img/nicole-honeywill-546848_1500.jpg) 2x);
+  }
+  @include media-breakpoint-up(md) {
+    background-image: url(img/nicole-honeywill-546848_1000.jpg);
+    background-image: image-set(url(img/nicole-honeywill-546848_1000.jpg) 1x, url(img/nicole-honeywill-546848_1500.jpg) 1.5x, url(img/nicole-honeywill-546848_3000.jpg) 3x);
+  }
+  @include media-breakpoint-up(lg) {
+    background-image: url(img/nicole-honeywill-546848_1200.jpg);
+    background-image: image-set(url(img/nicole-honeywill-546848_1200.jpg) 1x, url(img/nicole-honeywill-546848_3000.jpg) 2x);
+  }
+
+    @include media-breakpoint-up(xl) {
+    background-image: url(img/nicole-honeywill-546848_1500.jpg);
+    background-image: image-set(url(img/nicole-honeywill-546848_1500.jpg) 1x, url(img/nicole-honeywill-546848_3000.jpg) 2x);
+  }
+}
+
+#jumbo2{
+  position: relative;
+  background-color: theme-color("primary");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(img/pineapple-supply-co-81438_500.jpg);
+  background-image: image-set(url(img/pineapple-supply-co-81438_500.jpg) 1x, url(img/pineapple-supply-co-81438_1000.jpg) 2x, url(img/pineapple-supply-co-81438_1500.jpg) 3x);
+
+  @include media-breakpoint-up(sm) {
+    background-image: url(img/pineapple-supply-co-81438_800.jpg);
+    background-image: image-set(url(img/pineapple-supply-co-81438_800.jpg) 1x, url(img/pineapple-supply-co-81438_1500.jpg) 2x);
+  }
+  @include media-breakpoint-up(md) {
+    background-image: url(img/pineapple-supply-co-81438_1000.jpg);
+    background-image: image-set(url(img/pineapple-supply-co-81438_1000.jpg) 1x, url(img/pineapple-supply-co-81438_1500.jpg) 1.5x, url(img/pineapple-supply-co-81438_3000.jpg) 3x);
+  }
+  @include media-breakpoint-up(lg) {
+    background-image: url(img/pineapple-supply-co-81438_1200.jpg);
+    background-image: image-set(url(img/pineapple-supply-co-81438_1200.jpg) 1x, url(img/pineapple-supply-co-81438_3000.jpg) 2x);
+  }
+
+    @include media-breakpoint-up(xl) {
+    background-image: url(img/pineapple-supply-co-81438_1500.jpg);
+    background-image: image-set(url(img/pineapple-supply-co-81438_1500.jpg) 1x, url(img/pineapple-supply-co-81438_3000.jpg) 2x);
+  }
+}
