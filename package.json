@@ -34,6 +34,9 @@
     "webpack-dev-server": "^3.1.0"
   },
   "dependencies": {
+    "@fortawesome/fontawesome": "^1.1.4",
+    "@fortawesome/fontawesome-free-brands": "^5.0.8",
+    "@fortawesome/fontawesome-free-solid": "^5.0.8",
     "typeface-archivo-black": "0.0.54",
     "typeface-archivo-narrow": "0.0.54"
   }
