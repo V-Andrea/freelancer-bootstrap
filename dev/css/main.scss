@@ -37,6 +37,16 @@
 @import "node_modules/bootstrap/scss/print";
 
 
+h1, h2, .h1, .h2 {
+  font-family: "Archivo Black";
+  letter-spacing: -0.2rem;
+}
+
+h3, h4, .h3, .h4 {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
 #hero{
   position: relative;
   height: 100vh;
