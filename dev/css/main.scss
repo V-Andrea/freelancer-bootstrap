@@ -42,6 +42,7 @@ body {
 
 $highlight-color: darken(theme-color("dark"), 15%);
 
+
 h1, h2, .h1, .h2 {
   font-family: "Archivo Black";
   letter-spacing: -0.2rem;
@@ -96,37 +97,10 @@ h3, h4, .h3, .h4 {
 
 }
 
-#hero{
+
+#hero {
   position: relative;
   height: 100vh;
-  background-color: theme-color("primary");
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-image: url(img/mike-dorner-173502_500.jpg);
-  background-image: image-set(url(img/mike-dorner-173502_500.jpg) 1x, url(img/mike-dorner-173502_1000.jpg) 2x, url(img/mike-dorner-173502_1500.jpg) 3x);
-
-  @include media-breakpoint-up(sm) {
-    background-image: url(img/mike-dorner-173502_800.jpg);
-    background-image: image-set(url(img/mike-dorner-173502_800.jpg) 1x, url(img/mike-dorner-173502_1500.jpg) 2x);
-  }
-  @include media-breakpoint-up(md) {
-    background-image: url(img/mike-dorner-173502_1000.jpg);
-    background-image: image-set(url(img/mike-dorner-173502_1000.jpg) 1x, url(img/mike-dorner-173502_1500.jpg) 1.5x, url(img/mike-dorner-173502_3000.jpg) 3x);
-  }
-  @include media-breakpoint-up(lg) {
-    background-image: url(img/mike-dorner-173502_1200.jpg);
-    background-image: image-set(url(img/mike-dorner-173502_1200.jpg) 1x, url(img/mike-dorner-173502_3000.jpg) 2x);
-  }
-
-    @include media-breakpoint-up(xl) {
-    background-image: url(img/mike-dorner-173502_1500.jpg);
-    background-image: image-set(url(img/mike-dorner-173502_1500.jpg) 1x, url(img/mike-dorner-173502_3000.jpg) 2x);
-  }
-}
-
-#jumbo1 {
-  position: relative;
   background-color: theme-color("primary");
   background-position: center;
   background-repeat: no-repeat;
@@ -150,6 +124,34 @@ h3, h4, .h3, .h4 {
     @include media-breakpoint-up(xl) {
     background-image: url(img/nicole-honeywill-546848_1500.jpg);
     background-image: image-set(url(img/nicole-honeywill-546848_1500.jpg) 1x, url(img/nicole-honeywill-546848_3000.jpg) 2x);
+  }
+}
+
+#jumbo1{
+  position: relative;
+  background-color: theme-color("primary");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url(img/mike-dorner-173502_500.jpg);
+  background-image: image-set(url(img/mike-dorner-173502_500.jpg) 1x, url(img/mike-dorner-173502_1000.jpg) 2x, url(img/mike-dorner-173502_1500.jpg) 3x);
+
+  @include media-breakpoint-up(sm) {
+    background-image: url(img/mike-dorner-173502_800.jpg);
+    background-image: image-set(url(img/mike-dorner-173502_800.jpg) 1x, url(img/mike-dorner-173502_1500.jpg) 2x);
+  }
+  @include media-breakpoint-up(md) {
+    background-image: url(img/mike-dorner-173502_1000.jpg);
+    background-image: image-set(url(img/mike-dorner-173502_1000.jpg) 1x, url(img/mike-dorner-173502_1500.jpg) 1.5x, url(img/mike-dorner-173502_3000.jpg) 3x);
+  }
+  @include media-breakpoint-up(lg) {
+    background-image: url(img/mike-dorner-173502_1200.jpg);
+    background-image: image-set(url(img/mike-dorner-173502_1200.jpg) 1x, url(img/mike-dorner-173502_3000.jpg) 2x);
+  }
+
+    @include media-breakpoint-up(xl) {
+    background-image: url(img/mike-dorner-173502_1500.jpg);
+    background-image: image-set(url(img/mike-dorner-173502_1500.jpg) 1x, url(img/mike-dorner-173502_3000.jpg) 2x);
   }
 }
 
