@@ -100,11 +100,13 @@ h3, h4, .h3, .h4 {
 
 #hero {
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   background-color: theme-color("primary");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  // adding parallax effect
+  background-attachment: fixed;
   background-image: url(img/nicole-honeywill-546848_500.jpg);
   background-image: image-set(url(img/nicole-honeywill-546848_500.jpg) 1x, url(img/nicole-honeywill-546848_1000.jpg) 2x, url(img/nicole-honeywill-546848_1500.jpg) 3x);
 
@@ -133,6 +135,8 @@ h3, h4, .h3, .h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  // adding parallax effect
+  background-attachment: fixed;
   background-image: url(img/mike-dorner-173502_500.jpg);
   background-image: image-set(url(img/mike-dorner-173502_500.jpg) 1x, url(img/mike-dorner-173502_1000.jpg) 2x, url(img/mike-dorner-173502_1500.jpg) 3x);
 
@@ -161,6 +165,8 @@ h3, h4, .h3, .h4 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  // adding parallax effect
+  background-attachment: fixed;
   background-image: url(img/pineapple-supply-co-81438_500.jpg);
   background-image: image-set(url(img/pineapple-supply-co-81438_500.jpg) 1x, url(img/pineapple-supply-co-81438_1000.jpg) 2x, url(img/pineapple-supply-co-81438_1500.jpg) 3x);
 
