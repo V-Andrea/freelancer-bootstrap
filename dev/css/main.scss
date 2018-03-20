@@ -100,13 +100,14 @@ h3, h4, .h3, .h4 {
 
 #hero {
   position: relative;
+  // bug: 100vw causes horizontal scrollbar
+  width: 100%;
   min-height: 100vh;
   background-color: theme-color("primary");
-  background-position: center;
+  background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;
-  // adding parallax effect
-  background-attachment: fixed;
+  margin: 0 0 32px;
   background-image: url(img/nicole-honeywill-546848_500.jpg);
   background-image: image-set(url(img/nicole-honeywill-546848_500.jpg) 1x, url(img/nicole-honeywill-546848_1000.jpg) 2x, url(img/nicole-honeywill-546848_1500.jpg) 3x);
 
@@ -126,6 +127,43 @@ h3, h4, .h3, .h4 {
     @include media-breakpoint-up(xl) {
     background-image: url(img/nicole-honeywill-546848_1500.jpg);
     background-image: image-set(url(img/nicole-honeywill-546848_1500.jpg) 1x, url(img/nicole-honeywill-546848_3000.jpg) 2x);
+  }
+}
+
+.masked {
+  position: absolute;
+  mask-image: url(img/mask_3000.svg);
+  mask-position: center top;
+  mask-repeat: no-repeat;
+  mask-size: cover;
+  // bug: 100vw causes horizontal scrollbar
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  margin-top: -32px;
+  @include media-breakpoint-up(sm) {
+    margin-top: -64px;
+  }
+  padding: inherit;
+}
+
+#page-title {
+  position: fixed;
+  display: inline-block;
+  // bug: 100vw causes horizontal scrollbar
+  width: 100%;
+  top: 20px;
+}
+
+#intro {
+  padding-top: 150px;
+
+  .display-4 {
+    line-height: 1.2;
+
+    @include media-breakpoint-down(md) {
+      font-size: 2rem;
+    }
   }
 }
 
