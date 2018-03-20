@@ -116,23 +116,31 @@ h3, h4, .h3, .h4 {
     background-image: image-set(url(img/nicole-honeywill-546848_800.jpg) 1x, url(img/nicole-honeywill-546848_1500.jpg) 2x);
   }
   @include media-breakpoint-up(md) {
-    background-image: url(img/nicole-honeywill-546848_1000.jpg);
-    background-image: image-set(url(img/nicole-honeywill-546848_1000.jpg) 1x, url(img/nicole-honeywill-546848_1500.jpg) 1.5x, url(img/nicole-honeywill-546848_3000.jpg) 3x);
+    background-image: url(img/nicole-honeywill-546848_1000_md.jpg);
+    background-image: image-set(url(img/nicole-honeywill-546848_1000_md.jpg) 1x, url(img/nicole-honeywill-546848_1500_md.jpg) 1.5x, url(img/nicole-honeywill-546848_3000_md.jpg) 3x);
   }
   @include media-breakpoint-up(lg) {
-    background-image: url(img/nicole-honeywill-546848_1200.jpg);
-    background-image: image-set(url(img/nicole-honeywill-546848_1200.jpg) 1x, url(img/nicole-honeywill-546848_3000.jpg) 2x);
+    background-image: url(img/nicole-honeywill-546848_1200_md.jpg);
+    background-image: image-set(url(img/nicole-honeywill-546848_1200_md.jpg) 1x, url(img/nicole-honeywill-546848_3000_md.jpg) 2x);
   }
 
     @include media-breakpoint-up(xl) {
-    background-image: url(img/nicole-honeywill-546848_1500.jpg);
-    background-image: image-set(url(img/nicole-honeywill-546848_1500.jpg) 1x, url(img/nicole-honeywill-546848_3000.jpg) 2x);
+    background-image: url(img/nicole-honeywill-546848_1500_md.jpg);
+    background-image: image-set(url(img/nicole-honeywill-546848_1500_md.jpg) 1x, url(img/nicole-honeywill-546848_3000_md.jpg) 2x);
   }
 }
 
 .masked {
   position: absolute;
-  mask-image: url(img/mask_3000.svg);
+  mask-image: url(img/mask.svg);
+  -webkit-mask: url(img/mask.png);
+  @include media-breakpoint-up(md) {
+    mask-image: url(img/mask_md.svg);
+    -webkit-mask: url(img/mask_md.png);
+    mask-position: center top;
+    mask-repeat: no-repeat;
+    mask-size: cover;
+  }
   mask-position: center top;
   mask-repeat: no-repeat;
   mask-size: cover;
@@ -152,7 +160,8 @@ h3, h4, .h3, .h4 {
   display: inline-block;
   // bug: 100vw causes horizontal scrollbar
   width: 100%;
-  top: 20px;
+  top: 64px;
+  line-height: 1;
 }
 
 #intro {
@@ -163,6 +172,7 @@ h3, h4, .h3, .h4 {
 
     @include media-breakpoint-down(md) {
       font-size: 2rem;
+      padding-top: 180px;
     }
   }
 }
